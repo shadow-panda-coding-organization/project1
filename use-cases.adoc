@@ -1,0 +1,100 @@
+= Gitlab - Evaluation des Use Cases
+
+== Echanger avec les développeurs autour du code
+
+* Aucune difficulté pour créer/modifier/commenter le code source.
+* Tous les messages ou commentaires liés aux commits sont indexés et retrouvable facilement.
+* La créations de ticket(issue) est facile et intuitive. Il est possible de les classer/typer via les Labels ou les Milestone
+** On peut par exemple typer les issues en Question, Bugs ou Tasks
+** Tout est personnalisable
+* Il est possible également de créer des Merge Request pour gérer/planifier les merge de branches depuis l'IHM (les merge request peuvent être aussi pilotés directement depuis jenkins)
+
+== Effectuer de la revue de code intégrée au gestionnaire de source
+Il est possible de:
+
+* commenter les commits
+* intervenir directement dans le code depuis l'IHM (ajouter des @TODO dans le code et créer des permalinks pour les référencer dans une issue)
+* ecrire des snippets de code
+
+
+WARNING: `*Pas de reconnaissance syntaxique de TypeScript*`  
+
+
+== Publier les releases note : flux rss (ou mail)
+* Release effectuée avec le plugin maven jgitflow
+* Il est possible de publier une release note en utilisant les Merge Request et les milestones.
+* Une notification(mail ou rss) est envoyé lors de chaque évènement sur les merge request/commentaire/commit... pas génial... voir si l'utilisation des web ou git hooks n'est pas plus approprié.
+ 
+ 
+== Documenter la production Archi (socle, etc)
+* Support de markdown et asciidoc
+* Les fonctions basiques du wiki sont présentes dans gitlab.
+
+ 
+ 
+== Permettre la recherche sur les librairies, les bonnes pratiques, etc
+* Ce qui est indexé dans Gitlab:
+** le code
+** les commits
+** les commentaires
+** les issues
+** les milestone
+** les merge request
+** le wiki
+
+* La recherche est performante et rapide (2 à 3 secondes en moyenne)
+* les snippets ne sont pas indexés avec le code. Par contre une recherche globale est proposée dans le menu snippet.
+
+WARNING: `*Seule la branche Master est indexée*` 
+
+ 
+
+
+== Gérer les utilisateurs et l'accès au contenu à moindre coût
+* Les projets sont regroupés dans un groupe dans lequel on associe des membres (utilisateurs).
+* Il existe plusieurs profiles d'utilisateurs: guest, reporter, developper, master
+* Pour accéder à projet privé il est nécessaire de créer un user par utilisateur.
+
+ 
+ 
+ 
+== Exporter le contenu produit vers une autre solution
+* Le wiki est exportable via un git clone
+
+
+IMPORTANT: `*En mode SAS, il n'est pas possible d'exporter les issues*` +
+
+
+
+== Importer le contenu produit depuis une autre solution
+* Les sources svn importées dans le repo sont bien visible dans l'IDE
+* Le projet est visible dans Gitlab avec tout l'historique
+
+ 
+ 
+== Points forts / points faibles
+
+.Points forts / points faibles
+[cols="1,1",width="100%",options="header"]
+|===================================
+|`*POINTS FORTS*` |`*POINTS FAIBLES*`
+
+|Personnalisation de l'outil (creation de ses propres label par exemple)
+|Seule la branche master est indexée
+
+|Recherche performante
+|Impossible d'exporter les tickets créés
+
+|IHM riche et intuitive
+|Pas de reconnaissance syntaxique de TypeScript
+
+|La possibilité d'associer Merge Request et issues dans un milestone +
+=> posibilité de suivre le contenu de la prochaine release
+|
+
+|Merge Request permettant de réaliser un merge depuis l'IHM
+|
+
+|Avatar
+|
+|===================================
