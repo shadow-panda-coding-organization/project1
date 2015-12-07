@@ -42,18 +42,23 @@
 |===================================
 |`*POINTS FORTS*` |`*POINTS FAIBLES*`
 
-|Pas indexé :
-|* Messages de commit (peut être fait en local avec git : `git grep`, `git log -g --grep=STRING`)
-|* Wiki
+a| Indexé :
 
-|Indexé : +
-*  Repository
-*  Code (branche master seulement)
-*  Issues (inclus les Pull Requests)
-*  Users
+* Repository (nom du ~)
+* Code (branche _master_ seulement)
+* Issues (inclus les _Pull requests_)
+* Users
+a| Pas indexé :
+
+* Messages de _commit_ (peut être fait en local avec git : `git grep`, `git log -g --grep=STRING`)
+* Wiki
 
 |Inscription autonome des utilisateurs
 |Repository privé payant
+
+|API Github
+|
+
+|_Github Enterprise_
+|
 |===================================
-
-
