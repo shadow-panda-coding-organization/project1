@@ -1,0 +1,59 @@
+= Gitlab - Evaluation des Use Cases
+
+== Echanger avec les développeurs autour du code
+* Branches
+* Issues (customisables, pas de contraintes)
+* Pull requests
+* Snippets (= https://gist.github.com/[Gist])
+* Commentaires sur commit
+* Commentaires sur ligne de code d'un commit
+
+== Effectuer de la revue de code intégrée au gestionnaire de source
+* Commentaires sur commit
+* Commentaires sur ligne de code d'un commit
+
+== Publier les release notes : flux rss (ou mail)
+
+== Documenter la production Archi (socle, etc)
+* Support de markdown (amélioré d'ailleurs, cf https://help.github.com/articles/github-flavored-markdown/[GitHub Flavored Markdown]), asciidoc
+* Wiki simple à utiliser
+* Wiki import & export (`git clone https://.../project.wiki`)
+
+== Permettre la recherche sur les librairies, les bonnes pratiques, etc
+* Recherche insuffisante
+
+== Gérer les utilisateurs et l'accès au contenu à moindre coût
+* Pour participer à un projet, nécessitée d'avoir un compte nominatif
+* Création de compte nominatif à charge de celui qui en a besoin
+* Admin/Write/Read/None
+
+== Exporter le contenu produit vers une autre solution
+* Code, commits : `git clone`
+* Wiki : Le wiki est exportable via un `git clone https://...project.wiki`, donc très facile à créer & maintenir
+* Export d'Issues : scripts disponibles sur github (non testés)
+
+== Importer le contenu produit depuis une autre solution
+* C'est github quand même...
+
+== Points forts / points faibles
+
+.Points forts / points faibles
+[cols="1,1",width="100%",options="header"]
+|===================================
+|`*POINTS FORTS*` |`*POINTS FAIBLES*`
+
+|Pas indexé :
+|* Messages de commit (peut être fait en local avec git : `git grep`, `git log -g --grep=STRING`)
+|* Wiki
+
+|Indexé :
+|* Repository
+|* Code (branche master seulement)
+|* Issues (inclus les Pull Requests)
+|* Users
+
+|Inscription autonome des utilisateurs
+|Repository privé payant
+|===================================
+
+
