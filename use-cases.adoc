@@ -1,4 +1,4 @@
-= Gitlab - Evaluation des Use Cases
+= Github - Evaluation des Use Cases
 
 == Echanger avec les développeurs autour du code
 * Branches
@@ -45,7 +45,7 @@
 a| Indexé :
 
 * Repository (nom du ~)
-* Code (branche _master_ seulement)
+* Code (branche _master_ seulement) ; cf https://help.github.com/articles/searching-code/[Searching Code] & https://help.github.com/articles/search-syntax/[Search Syntax]
 * Issues (inclus les _Pull requests_)
 * Users
 a| Pas indexé :
