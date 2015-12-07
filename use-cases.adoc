@@ -20,7 +20,7 @@
 * Wiki import & export (`git clone https://.../project.wiki`)
 
 == Permettre la recherche sur les librairies, les bonnes pratiques, etc
-* Recherche insuffisante
+* Recherche insuffisante ? pas tant que ça finalement. Cherche dans le code et les issues.
 
 == Gérer les utilisateurs et l'accès au contenu à moindre coût
 * Pour participer à un projet, nécessitée d'avoir un compte nominatif
