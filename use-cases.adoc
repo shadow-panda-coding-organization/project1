@@ -42,18 +42,17 @@
 |===================================
 |`*POINTS FORTS*` |`*POINTS FAIBLES*`
 
-|Pas indexé :
-|* Messages de commit (peut être fait en local avec git : `git grep`, `git log -g --grep=STRING`)
-|* Wiki
+a| Pas indexé :
 
-|Indexé : +
-*  Repository
-*  Code (branche master seulement)
-*  Issues (inclus les Pull Requests)
-*  Users
+* Messages de commit (peut être fait en local avec git : `git grep`, `git log -g --grep=STRING`)
+* Wiki
+a| Indexé :
+
+* Repository
+* Code (branche master seulement)
+* Issues (inclus les Pull Requests)
+* Users
 
 |Inscription autonome des utilisateurs
 |Repository privé payant
 |===================================
-
-
