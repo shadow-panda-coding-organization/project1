@@ -47,10 +47,10 @@
 |* Wiki
 
 |Indexé : +
-* Repository
-* Code (branche master seulement)
-* Issues (inclus les Pull Requests)
-* Users
+*  Repository
+*  Code (branche master seulement)
+*  Issues (inclus les Pull Requests)
+*  Users
 
 |Inscription autonome des utilisateurs
 |Repository privé payant
